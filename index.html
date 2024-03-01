@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>29 - Random Password Generator</title>
+    </head>
+
+    <body>
+        <div id="mainContainer">
+            <h1 id="title">Password Generator</h1>
+
+            <div id="optionsAndSliders">
+                <div id="optionsContainer">
+
+                    <h3 id="optionsOptionsLabel" class="optionsCategoryLabel">Options:</h3>
+
+                    <div class="sliderDiv">
+                        <h3>Uppercase Letters</h3>
+                    </div>
+
+                    <br>
+
+                    <div class="sliderDiv">
+                        <h3>Numbers</h3>
+                    </div>
+
+                    <br>
+
+                    <div class="sliderDiv">
+                        <h3>Special Characters</h3>
+                    </div>
+
+                    <br>
+
+                </div>
+
+                <div id="slidersContainer">
+                    <label for="uppercaseChk" class="switch">
+                        <input type="checkbox" id="uppercaseChk">
+                        <div class="slider round"></div>
+                    </label>
+
+                    <label for="numbersChk" class="switch">
+                        <input type="checkbox" id="numbersChk">
+                        <div class="slider round"></div>
+                    </label>
+
+                    <label for="specialsChk" class="switch">
+                        <input type="checkbox" id="specialsChk">
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+
+
+
+            </div>
+
+
+
+            <div id="lengthSliderContainer">
+                <h3 class="optionsCategoryLabel" id="lengthCategoryLabel">Length:</h3>
+                <input type="range" min="8" max="64" value="36" id="lengthSlider">
+                <h3 id="lengthSliderValue">00</h3>
+            </div>
+
+            <button id="generateBtn">Generate Password</button>
+            <br>
+            <h2 id="resultIndicatorLabel">Result:</h2>
+            <div id="resultLabelContainer">
+                <h3 id="resultLabel">TES12314Tiiadfla230f</h3>
+            </div>
+
+            <h3 id="disclaimer">Shota Oniani ©2024 All Rights Reserved.</h3>
+
+        </div>
+
+
+
+        <script src="index.js"></script>
+    </body>
+
+</html>
