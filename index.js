@@ -16,7 +16,6 @@ let uppercaseSlc = false, numbersSlc = false, specialsSlc = false, desiredLen = 
 
 let charPool = [...lowercaseStr];
 
-
 lengthSliderValue.textContent = String(lengthSlider.value);
 resultLabel.textContent = "";
 resultIndicatorLabel.style.visibility = "hidden";
@@ -33,7 +32,7 @@ generateBtn.onclick = function () {
     generatedPass = "";
     resultLabelContainer.style.visibility = "visible";
     resultIndicatorLabel.style.visibility = "visible";
-
+    
     if (uppercaseSwitch.checked) charPool.push(...uppercaseStr);
     if (numbersSwitch.checked) charPool.push(...numbersStr);
     if (specialsSwitch.checked) charPool.push(...specialsStr);
@@ -41,10 +40,7 @@ generateBtn.onclick = function () {
     for (let i = 0; i < desiredLen; i++) {
         let index = Math.floor(Math.random() * (charPool.length - 1));
         generatedPass += charPool[index];
-
     }
-
+    
     resultLabel.textContent = generatedPass;
 }
-
-
