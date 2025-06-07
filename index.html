@@ -4,6 +4,64 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <style>
+            input:checked + .slider {
+    background-color: #6673bb;
+}
+
+input:checked + .slider:before {
+    transform: translateX(21px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.sliderDiv {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 100%;
+}
+
+.sliderDiv > h3 {
+    display: inline;
+    height: 100%;
+    width: 40%;
+    margin-left: 10%;
+}
+
+.sliderDiv > label {
+    vertical-align: middle;
+}
+
+#resultLabelContainer {
+    width: 80%;
+    margin-left: 7%;
+    margin-bottom: 5%;
+    margin-top: 4%;
+    word-break: break-all;
+    padding: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    box-shadow: 0px 0px 4px 3px #111C11 inset;
+    border-radius: 30px;
+}
+
+#disclaimer {
+    width: 100%;
+    font-family: Product Sans Light;
+    font-size: 0.9em;
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+            
+        </style>
         <title>29 - Random Password Generator</title>
     </head>
 
